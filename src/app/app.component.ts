@@ -1,13 +1,14 @@
-import {Component} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { HeaderComponent } from "./header/header.component";
+import { UserComponent } from "./user/user.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
-  template: `
-    <h1>Default</h1>
-  `,
-  styleUrls: ['./app.component.css'],
+  imports: [CommonModule, HeaderComponent, UserComponent],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'default';
