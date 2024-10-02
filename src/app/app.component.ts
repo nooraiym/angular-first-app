@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { DUMMY_USERS } from './dummy.users';
 import { HeaderComponent } from "./header/header.component";
 import { UserComponent } from "./user/user.component";
 
@@ -11,5 +12,5 @@ import { UserComponent } from "./user/user.component";
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'default';
+  users = DUMMY_USERS
 }
