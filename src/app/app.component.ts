@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { DUMMY_USERS } from './dummy.users';
-import { HeaderComponent } from "./header/header.component";
-import { UserComponent } from "./user/user.component";
+import { HeaderComponent } from './header/header.component';
+import { UserComponent } from './user/user.component';
 
 @Component({
   selector: 'app-root',
@@ -12,5 +12,9 @@ import { UserComponent } from "./user/user.component";
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  users = DUMMY_USERS
+  users = DUMMY_USERS;
+
+  onSelectUser(id: string) {
+    console.log(id);
+  }
 }
